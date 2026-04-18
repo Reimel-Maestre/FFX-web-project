@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio | Spira Corporativo{% endblock %}
+
+{% block content %}
+
+<header id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+    <div class="carousel-inner shadow-lg">
+        <div class="carousel-item active">
+            <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Hero/tidus_hero.webp" class="d-block w-100 hero-img" alt="Spira 1">
+        </div>
+        <div class="carousel-item">
+            <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Hero/auron_hero.webp" class="d-block w-100 hero-img" alt="Spira 2">
+        </div>
+        <div class="carousel-item">
+            <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Hero/zanarkand_hero.webp" class="d-block w-100 hero-img" alt="Spira 3">
+        </div>
+    </div>
+    
+    <div class="position-absolute w-100 h-100 d-flex flex-column justify-content-end justify-content-md-center pb-5 pt-5" style="top: 0; left: 0; z-index: 10; pointer-events: none;">
+        <div class="mx-auto mb-5 mb-md-0 mt-auto mt-md-0 text-center" style="max-width: 850px; pointer-events: auto;">
+            <h1 class="fw-bold text-white text-uppercase mb-3" style="letter-spacing: 3px; font-size: calc(1.6rem + 1.4vw); text-shadow: 2px 2px 8px rgba(0,0,0,0.5);">
+                Tu viaje comienza en la orilla del destino
+            </h1>
+            <p class="text-white mb-4 px-3 px-md-5" style="font-size: 1.2rem; font-weight: 300; text-shadow: 2px 2px 5px rgba(0,0,0,0.8);">
+                Descubre Spira, domina el Tablero de Esferas y desafía el ciclo de la Calamidad. La aventura definitiva te espera.
+            </p>
+            <div class="d-flex justify-content-center">
+                <a href="#mas-info" class="btn btn-ffx-yellow btn-lg rounded-pill px-5 py-3 shadow-lg fw-bold">Iniciar el Peregrinaje</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+
+<!-- 2. CIFRAS CORPORATIVAS / LOGROS -->
+<section id="mas-info" class="py-5 bg-white border-bottom">
+    <div class="container text-center">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <i class="bi bi-controller text-ffx-blue display-4 mb-3"></i>
+                <h3 class="fw-bold">10+ Millones</h3>
+                <p class="text-muted">De copias vendidas a nivel mundial, consolidando un legado imborrable.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="bi bi-music-note-beamed text-ffx-blue display-4 mb-3"></i>
+                <h3 class="fw-bold">Banda Sonora</h3>
+                <p class="text-muted">Composiciones legendarias de Nobuo Uematsu que marcaron a una generación.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="bi bi-hourglass-split text-ffx-blue display-4 mb-3"></i>
+                <h3 class="fw-bold">100+ Horas</h3>
+                <p class="text-muted">De inmersión total en una historia de amor, sacrificio y redención.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- . VIAJE A TRAVES DE GENERACIONES/ PLATAFORMAS -->
+
+<section class="py-5 bg-light border-bottom">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-ffx-blue text-uppercase">El Viaje a Través de Generaciones</h2>
+            <p class="text-muted">Un legado multiplataforma que ha evolucionado junto a la tecnología.</p>
+        </div>
+        <div class="row g-4 text-center">
+            
+            <div class="col-md-3 col-sm-6">
+                <div class="p-4 bg-white rounded-4 shadow-sm h-100 border-0 transition-hover">
+                    <i class="bi bi-playstation text-secondary display-4 mb-3 d-block"></i>
+                    <h5 class="fw-bold">El Origen</h5>
+                    <span class="badge bg-secondary mb-3 px-3 py-2">2001 | PS2</span>
+                    <p class="small text-muted mb-0">El nacimiento de la leyenda. El primer título de la franquicia en introducir actuación de voz real y escenarios completamente en 3D.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-sm-6">
+                <div class="p-4 bg-white rounded-4 shadow-sm h-100 border-0 transition-hover">
+                    <i class="bi bi-controller text-primary display-4 mb-3 d-block"></i>
+                    <h5 class="fw-bold">Transición HD</h5>
+                    <span class="badge bg-primary mb-3 px-3 py-2">2013 | PS3 & Vita</span>
+                    <p class="small text-muted mb-0">La llegada de la alta definición. Texturas mejoradas y banda sonora arreglada para una nueva generación de pantallas.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-sm-6">
+                <div class="p-4 bg-white rounded-4 shadow-sm h-100 border-0 transition-hover">
+                    <i class="bi bi-nintendo-switch text-danger display-4 mb-3 d-block"></i>
+                    <h5 class="fw-bold">Era Moderna</h5>
+                    <span class="badge bg-danger mb-3 px-3 py-2">2015+ | Consolas</span>
+                    <p class="small text-muted mb-0">Consolidación en PS4, Xbox y Switch, permitiendo llevar el mundo de Spira tanto en el bolsillo como en televisores 4K.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-sm-6">
+                <div class="p-4 bg-white rounded-4 shadow-sm h-100 border-0 transition-hover">
+                    <i class="bi bi-pc-display text-success display-4 mb-3 d-block"></i>
+                    <h5 class="fw-bold">Frontera Definitiva</h5>
+                    <span class="badge bg-success mb-3 px-3 py-2">2016 | PC Steam</span>
+                    <p class="small text-muted mb-0">La versión más completa hasta la fecha. Resoluciones personalizadas, guardado automático y boosters del sistema integrados.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- 3. TESTIMONIOS (RESEÑAS) -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5 text-ffx-blue text-uppercase">La Crítica Mundial</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm rounded-4 p-3">
+                    <div class="card-body">
+                        <p class="fst-italic text-secondary">"Una obra maestra atemporal. Su sistema de combate y su historia siguen siendo un referente en la industria."</p>
+                        <h6 class="fw-bold mb-0 mt-3">- IGN Entertainment</h6>
+                        <small class="text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm rounded-4 p-3">
+                    <div class="card-body">
+                        <p class="fst-italic text-secondary">"Visualmente impactante y emocionalmente devastador. El mundo de Spira se siente vivo y vibrante."</p>
+                        <h6 class="fw-bold mb-0 mt-3">- GameSpot</h6>
+                        <small class="text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm rounded-4 p-3">
+                    <div class="card-body">
+                        <p class="fst-italic text-secondary">"El Remaster HD perfecciona lo que ya era un clásico imprescindible para cualquier amante del RPG."</p>
+                        <h6 class="fw-bold mb-0 mt-3">- RPG Site</h6>
+                        <small class="text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 4. LLAMADO A LA ACCIÓN FINAL -->
+<section class="py-5 bg-ffx-dark text-white text-center">
+    <div class="container py-4">
+        <h2 class="fw-bold mb-3">¿Listo para escuchar su historia?</h2>
+        <p class="lead text-white-50 mb-4">Adquiere FINAL FANTASY X/X-2 HD Remaster y revive la magia en alta definición.</p>
+        <a href="https://store.steampowered.com/app/359870/FINAL_FANTASY_XX2_HD_Remaster/" target="_blank" class="btn btn-ffx-yellow btn-lg rounded-pill px-5 shadow fw-bold">
+            <i class="bi bi-steam me-2"></i> Jugar en Steam
+        </a>
+    </div>
+</section>
+
+{% endblock %}

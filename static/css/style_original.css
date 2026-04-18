@@ -1,0 +1,82 @@
+/* Paleta de Colores FFX */
+:root {
+    --azul-oscuro: #283878;
+    --azul-brillante: #3d8df2;
+    --gris: #b5b8b9;
+    --amarillo: #fde722;
+    --blanco-azulado: #f3f5f9;
+}
+
+/* Estructura general para mantener el footer siempre abajo */
+body {
+    background-color: var(--blanco-azulado);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Clases personalizadas que usaremos en Bootstrap */
+.bg-ffx-dark {
+    background-color: var(--azul-oscuro) !important;
+}
+
+.text-ffx-blue {
+    color: var(--azul-brillante) !important;
+}
+
+.btn-ffx-yellow {
+    background-color: var(--amarillo);
+    color: #000;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-ffx-yellow:hover {
+    background-color: #e6d21e;
+    color: #000;
+}
+
+/* Efecto de cristal para el texto del Hero (Solo en celular) */
+.glass-panel {
+    background: rgba(40, 56, 120, 0.4); /* Azul oscuro de FFX translúcido */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* En pantallas grandes (PC), quitamos el fondo para que la imagen se vea limpia */
+@media (min-width: 768px) {
+    .glass-panel {
+        background: transparent;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        border: none;
+        padding: 0;
+    }
+}
+
+body {
+    background-color: var(--blanco-azulado);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* HE ELIMINADO EL PADDING-TOP */
+}
+/* Ajuste para celular de lado (horizontal) */
+@media (max-height: 500px) and (orientation: landscape) {
+    #heroCarousel .carousel-item img {
+        height: 100vh; /* Que ocupe toda la pantalla para que la imagen se luzca */
+    }
+    #heroCarousel .position-absolute {
+        justify-content: center !important; /* Centramos el texto para que no se salga */
+        padding-bottom: 10px !important;
+    }
+}

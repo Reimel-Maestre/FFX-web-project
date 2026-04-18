@@ -1,0 +1,68 @@
+/* PALETA: DORADO SOLEMNE */
+:root {
+    --azul-oscuro: #0a1128;      /* Azul marino muy profundo */
+    --azul-brillante: #c5a02a;   /* Dorado viejo */
+    --gris: #e1e1e1;             /* Blanco roto */
+    --amarillo: #d4af37;         /* Oro metálico */
+    --blanco-azulado: #fdfdfd;   /* Fondo limpio */
+}
+
+/* FIX DEL NAVBAR: Empujamos el contenido 70px abajo para que el fixed-top no lo tape */
+body {
+    background-color: var(--blanco-azulado);
+    color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 66px; 
+}
+
+main { flex: 1; }
+
+.bg-ffx-dark { background-color: var(--azul-oscuro) !important; }
+.text-ffx-blue { color: var(--azul-brillante) !important; }
+
+.btn-ffx-yellow {
+    background-color: var(--amarillo);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.btn-ffx-yellow:hover {
+    background-color: #b8962e;
+    color: #fff;
+}
+
+/* Nueva clase para el Hero (Más limpio que usar estilos en línea) */
+.hero-img {
+    height: 80vh;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+/* Efecto de cristal elegante */
+.glass-panel {
+    background: rgba(10, 17, 40, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 30px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+@media (min-width: 768px) {
+    .glass-panel { background: transparent; backdrop-filter: none; border: none; }
+}
+
+/* FIX CELULAR HORIZONTAL: Le restamos los 70px del Navbar para que no se desborde ni se recorte */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero-img { 
+        height: calc(100vh - 66px); 
+    }
+    #heroCarousel .position-absolute { 
+        justify-content: center !important; 
+        padding-bottom: 10px !important; 
+    }
+}

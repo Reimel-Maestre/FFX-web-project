@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Final Fantasy X | Portafolio{% endblock %}</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!-- NAVBAR CORPORATIVO -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-ffx-dark fixed-top shadow">
+    <div class="container">
+        <!-- Logo y Título -->
+        <a class="navbar-brand fw-bold text-uppercase d-flex align-items-center" href="/">
+            <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Hero/Logo.webp" 
+                 alt="Logo" width="40" height="40" class="me-2" style="object-fit: contain;">
+            <span class="text-white">Final Fantasy X</span>
+        </a>
+
+        <!-- Botón Hamburguesa (Asegúrate de que el id coincida con el div de abajo) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Enlaces -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link text-white" href="/">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="/spira">Mundo de Spira</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="/legado">Legado</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="/biblioteca">Biblioteca</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- CONTENIDO PRINCIPAL (Aquí se insertan las otras páginas) -->
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <!-- FOOTER CORPORATIVO -->
+    <footer class="bg-ffx-dark text-white py-4 mt-auto">
+        <div class="container text-center">
+            
+            <!-- Redes Sociales -->
+            <div class="mb-3 fs-4">
+                <a href="#" class="text-white mx-2"><i class="bi bi-github"></i></a>
+                <a href="#" class="text-white mx-2"><i class="bi bi-linkedin"></i></a>
+                <!-- Icono falso de mapa del sitio -->
+                <a href="/spira" class="text-white mx-2" title="Mapa de Spira"><i class="bi bi-map"></i></a>
+            </div>
+            
+            <!-- Disclaimer de Copyright (Tu escudo legal) -->
+            <p class="small text-white-50 mb-2 px-3">
+                Proyecto educativo y de portafolio web. Las imágenes, logotipos y personajes son propiedad intelectual de Square Enix Co., Ltd. No se busca infringir derechos de autor ni obtener fines de lucro.
+            </p>
+            
+            <hr class="border-secondary mb-3">
+            <p class="small text-white-50 mb-0">&copy; 2026 Desarrollado por un Programador con Visión.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (Necesario para que funcione el menú desplegable en celulares) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block title %}Biblioteca | Guías FFX{% endblock %}
+
+{% block content %}
+
+<!-- ENCABEZADO DE LA PÁGINA -->
+<header class="bg-ffx-dark text-white text-center py-5 shadow-sm">
+    <div class="container mt-4">
+        <h1 class="display-4 fw-bold text-uppercase" style="letter-spacing: 2px;">Archivos de Spira</h1>
+        <p class="lead text-white-50">Accede a los compendios y guías definitivas para dominar tu viaje.</p>
+    </div>
+</header>
+
+<div class="container my-5">
+    
+    <div class="row g-4">
+        
+        <!-- Tarjeta Guía Paso a Paso -->
+        <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm rounded-4 text-center">
+                <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Hero/EliteGuias3.webp" class="card-img-top rounded-top-4" style="height: 200px; object-fit: cover;" alt="Guía">
+                <div class="card-body d-flex flex-column p-4">
+                    <h5 class="fw-bold text-ffx-blue mb-2">Guía Paso a Paso</h5>
+                    <p class="text-secondary small flex-grow-1">No te pierdas ni un solo diccionario Albhed ni ningún secreto oculto en tu recorrido por Spira.</p>
+                    <a href="https://www.eliteguias.com/guias/f/ff10/final-fantasy-x.php" target="_blank" class="btn btn-outline-primary rounded-pill mt-3 fw-bold">Consultar en EliteGuias</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta Tablero de Esferas -->
+        <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm rounded-4 text-center">
+                <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Biblioteca/esferas_tablero.webp" class="card-img-top rounded-top-4" style="height: 200px; object-fit: cover;" alt="Tablero">
+                <div class="card-body d-flex flex-column p-4">
+                    <h5 class="fw-bold text-ffx-blue mb-2">El Tablero de Esferas</h5>
+                    <p class="text-secondary small flex-grow-1">Aprende a maximizar los atributos de tus personajes, escoger el mejor método farmear esferas y elegir el camino más eficiente para Khimari.</p>
+                    <a href="https://www.ign.com/wikis/final-fantasy-x/Sphere_Grid" target="_blank" class="btn btn-outline-primary rounded-pill mt-3 fw-bold">Consultar en IGN</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta Guía Youtube -->
+        <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm rounded-4 text-center">
+                <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Biblioteca/guia_comentada.webp" 
+     class="card-img-top rounded-top-4" 
+     style="height: 200px; object-fit: contain; background-color: #f3f5f9;" 
+     alt="Guía">
+                <div class="card-body d-flex flex-column p-4">
+                    <h5 class="fw-bold text-ffx-blue mb-2">Guía Comentada en Youtube</h5>
+                    <p class="text-secondary small flex-grow-1">Guía comentada en vídeo realizada por el Custo, completando todos y cada uno de los aspectos del juego, desde la historia principal hasta la obtención de las Armas de los Siete Astros, la Batalla contra los Eones Oscuros y el Verdugo Final.</p>
+                    <a href="https://youtube.com/playlist?list=PL81FqAnItn8qbIZGadLgsW46O-B-Tswl3&si=sZiiLywIzjx5pMoW" target="_blank" class="btn btn-outline-primary rounded-pill mt-3 fw-bold">Ver en Youtube</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

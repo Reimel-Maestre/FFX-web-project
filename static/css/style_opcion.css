@@ -1,0 +1,53 @@
+/* PALETA: ZANARKAND NIGHT */
+:root {
+    --azul-oscuro: #0f172a;      /* Azul-negro profundo */
+    --azul-brillante: #38bdf8;   /* Cyan eléctrico */
+    --gris: #94a3b8;             /* Gris pizarra */
+    --amarillo: #f8fafc;         /* Blanco brillante (Estilo plata) */
+    --blanco-azulado: #020617;   /* Fondo modo oscuro total */
+}
+
+body {
+    background-color: var(--blanco-azulado);
+    color: #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main { flex: 1; }
+
+.bg-ffx-dark { background-color: var(--azul-oscuro) !important; }
+.text-ffx-blue { color: var(--azul-brillante) !important; }
+
+.btn-ffx-yellow {
+    background-color: var(--azul-brillante);
+    color: #000;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+}
+
+.btn-ffx-yellow:hover {
+    background-color: #7dd3fc;
+    color: #000;
+}
+
+/* Efecto de cristal oscuro */
+.glass-panel {
+    background: rgba(15, 23, 42, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@media (min-width: 768px) {
+    .glass-panel { background: transparent; backdrop-filter: none; border: none; }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+    #heroCarousel .carousel-item img { height: 100vh; }
+    #heroCarousel .position-absolute { justify-content: center !important; padding-bottom: 10px !important; }
+}

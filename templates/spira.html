@@ -1,0 +1,419 @@
+{% extends 'base.html' %}
+
+{% block title %}El Mundo de Spira | FFX{% endblock %}
+
+{% block content %}
+
+<!-- ENCABEZADO DE LA PÁGINA -->
+<header class="bg-ffx-dark text-white text-center py-5 shadow-sm">
+    <div class="container mt-4">
+        <h1 class="display-4 fw-bold text-uppercase" style="letter-spacing: 2px;">El Mundo de Spira</h1>
+        <p class="lead text-white-50">Conoce a los héroes, las amenazas y los destinos que forjan esta historia.</p>
+    </div>
+</header>
+
+<div class="container my-5">
+
+    <!-- SECCIÓN 1: GUARDIANES E INVOCADORES -->
+    <h2 class="text-ffx-blue fw-bold border-bottom pb-2 mb-4">Guardianes e Invocadores</h2>
+    <div class="row g-4 mb-5">
+        
+        <!-- Tarjeta Tidus -->
+        <div class="col-md-3 col-sm-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalTidus">
+                <!-- Imagen Placeholder -->
+                <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Personajes/Tidus.webp" class="card-img-top rounded-top-4" alt="Tidus" style="height: 250px; object-fit: cover;">
+                <div class="card-body text-center">
+                    <h5 class="fw-bold mb-0">Tidus</h5>
+                    <small class="text-muted">Estrella de Blitzbol</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta Yuna -->
+        <div class="col-md-3 col-sm-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalYuna">
+                <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Personajes/Yuna2.webp" class="card-img-top rounded-top-4" alt="Yuna" style="height: 250px; object-fit: cover;">
+                <div class="card-body text-center">
+                    <h5 class="fw-bold mb-0">Yuna</h5>
+                    <small class="text-muted">Invocadora</small>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tarjeta Auron -->
+        <div class="col-md-3 col-sm-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalAuron">
+                <!-- Imagen Placeholder -->
+                <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Personajes/Auron.webp" class="card-img-top rounded-top-4" alt="Auron" style="height: 250px; object-fit: cover;">
+                <div class="card-body text-center">
+                    <h5 class="fw-bold mb-0">Auron</h5>
+                    <small class="text-muted">El Mejor Guardián</small>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tarjeta Wakka -->
+        <div class="col-md-3 col-sm-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalWakka">
+                <!-- Imagen Placeholder -->
+                <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Personajes/Wakka2.webp" class="card-img-top rounded-top-4" alt="Wakka" style="height: 250px; object-fit: cover;">
+                <div class="card-body text-center">
+                    <h5 class="fw-bold mb-0">Wakka</h5>
+                    <small class="text-muted">Capitán de los Besaid Aurochs</small>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tarjeta Lulu -->
+        <div class="col-md-3 col-sm-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalLulu">
+                <!-- Imagen Placeholder -->
+                <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Personajes/Lulu.webp" class="card-img-top rounded-top-4" alt="Lulu" style="height: 250px; object-fit: cover;">
+                <div class="card-body text-center">
+                    <h5 class="fw-bold mb-0">Lulu</h5>
+                    <small class="text-muted">Maga Negra y Guardiana</small>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tarjeta Khimari -->
+        <div class="col-md-3 col-sm-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalKhimari">
+                <!-- Imagen Placeholder -->
+                <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Personajes/khimari.webp" class="card-img-top rounded-top-4" alt="Khimari" style="height: 250px; object-fit: cover;">
+                <div class="card-body text-center">
+                    <h5 class="fw-bold mb-0">Khimari Rhonso</h5>
+                    <small class="text-muted">El Último Rhonso</small>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tarjeta Rikku -->
+        <div class="col-md-3 col-sm-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalRikku">
+                <!-- Imagen Placeholder -->
+                <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Personajes/Rikku.webp" class="card-img-top rounded-top-4" alt="Rikku" style="height: 250px; object-fit: cover;">
+                <div class="card-body text-center">
+                    <h5 class="fw-bold mb-0">Rikku</h5>
+                    <small class="text-muted">La Chica Albhed</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCIÓN 2: AMENAZAS DE SPIRA -->
+    <h2 class="text-ffx-blue fw-bold border-bottom pb-2 mb-4 mt-5">Amenazas de Spira</h2>
+    <div class="row g-4 mb-5">
+        
+        <!-- Tarjeta Sinh (Sin Modal, solo informativa para variar el diseño) -->
+        <div class="col-md-8 mb-4">
+    <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+        <div class="row g-0 h-100">
+            <div class="col-md-5">
+                <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Personajes/Sinh2.webp" 
+                     class="w-100 h-100" 
+                     style="object-fit: cover; min-height: 250px;" 
+                     alt="Sinh">
+            </div>
+            <div class="col-md-7 d-flex align-items-center">
+                <div class="card-body p-4 bg-white">
+                    <h4 class="fw-bold text-dark">Sinh (Calamidad)</h4>
+                    <p class="text-secondary small mb-0">La bestia colosal que aterroriza Spira. Su sola presencia destruye ciudades enteras y mantiene al mundo en un ciclo de miedo y muerte constante. Una fuerza de la naturaleza motivada por la destrucción.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        <!-- Tarjeta Seymour -->        
+        <div class="col-md-8 mb-4">
+    <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+        <div class="row g-0 h-100">
+            <div class="col-md-5">
+                <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Personajes/Seymour.webp" 
+                     class="w-100 h-100" 
+                     style="object-fit: cover; min-height: 250px;" 
+                     alt="Seymour">
+            </div>
+            <div class="col-md-7 d-flex align-items-center">
+                <div class="card-body p-4 bg-white">
+                    <h4 class="fw-bold text-dark">Seymour Guado</h4>
+                    <p class="text-secondary small mb-0">Maestre de Yevon que manipula la religión para fines siniestros. Busca convertirse en el próximo Sinh para "liberar" a Spira de su dolor matando a todos sus habitantes, actuando como un contrapunto directo y oscuro al viaje de Yuna.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        <!-- Tarjeta Yunalesca -->      
+        <div class="col-md-8 mb-4">
+    <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+        <div class="row g-0 h-100">
+            <div class="col-md-5">
+                <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Personajes/Yunalesca2.webp" 
+                     class="w-100 h-100" 
+                     style="object-fit: cover; min-height: 250px;" 
+                     alt="Yunalesca">
+            </div>
+            <div class="col-md-7 d-flex align-items-center">
+                <div class="card-body p-4 bg-white">
+                    <h4 class="fw-bold text-dark">Lady Yunalesca</h4>
+                    <p class="text-secondary small mb-0">Perpetúa la "espiral de la muerte" en Spira, ofreciendo una falsa esperanza a través del sacrificio y la Invocación Final. Como primera invocadora en derrotar a Sinh, ella mantiene la tradición de Yevon de no enviados, enfrentándose a Yuna cuando esta rechaza sacrificar a sus guardianes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+        
+        
+        <!-- Tarjeta Yu Yevon-->        
+        <div class="col-md-8 mb-4">
+    <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+        <div class="row g-0 h-100">
+            <div class="col-md-5">
+                <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Personajes/Yu_Yevon.webp" 
+                     class="w-100 h-100" 
+                     style="object-fit: cover; min-height: 250px;" 
+                     alt="Yu Yevon">
+            </div>
+            <div class="col-md-7 d-flex align-items-center">
+                <div class="card-body p-4 bg-white">
+                    <h4 class="fw-bold text-dark">Yu Yevon</h4>
+                    <p class="text-secondary small mb-0">Entidad divina/parásito que creó a Sinh. Antiguo invocador de Zanarkand, se convirtió en un ser desprovisto de voluntad, cuyo único propósito es invocar constantemente un "sueño" de su ciudad destruida, protegido por la armadura de Sinh.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    <!-- SECCIÓN 3: DESTINOS -->
+    <h2 class="text-ffx-blue fw-bold border-bottom pb-2 mb-4 mt-5">Destinos Icónicos</h2>
+    <div class="row g-4">
+        
+        <!-- Tarjeta Zanarkand -->
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm rounded-4 text-white">
+                <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Ubicaciones/Zanarkand.webp" class="card-img rounded-4" alt="Zanarkand" style="height: 200px; object-fit: cover; filter: brightness(0.5);">
+                <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <h5 class="card-title fw-bold">Zanarkand</h5>
+                    <p class="card-text small">La metrópolis que nunca duerme.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tarjeta Besaid -->
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm rounded-4 text-white">
+                <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Ubicaciones/Besaid.webp" class="card-img rounded-4" alt="Besaid" style="height: 200px; object-fit: cover; filter: brightness(0.5);">
+                <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <h5 class="card-title fw-bold">Besaid</h5>
+                    <p class="card-text small">El comienzo del viaje.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tarjeta Luca -->
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm rounded-4 text-white">
+                <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Ubicaciones/Luca.webp" class="card-img rounded-4" alt="Luca" style="height: 200px; object-fit: cover; filter: brightness(0.5);">
+                <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <h5 class="card-title fw-bold">Luca</h5>
+                    <p class="card-text small">El centro del Blitzball.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tarjeta Bikanel -->
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm rounded-4 text-white">
+                <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Ubicaciones/Bikanel.webp" class="card-img rounded-4" alt="Bikanel" style="height: 200px; object-fit: cover; filter: brightness(0.5);">
+                <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <h5 class="card-title fw-bold">Bikanel</h5>
+                    <p class="card-text small">Las Arenas de Sanubia, hogar de los Albhed y de los Cactilios.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tarjeta Monte Gagazet -->
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm rounded-4 text-white">
+                <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Ubicaciones/Gagazet.webp" class="card-img rounded-4" alt="Monte Gagazet" style="height: 200px; object-fit: cover; filter: brightness(0.5);">
+                <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <h5 class="card-title fw-bold">Monte Gagazet</h5>
+                    <p class="card-text small">El paso final de los invocadores.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tarjeta Llanura de la Calma -->
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm rounded-4 text-white">
+                <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Ubicaciones/Llanura_calma.webp" class="card-img rounded-4" alt="Llanura de la Calma" style="height: 200px; object-fit: cover; filter: brightness(0.5);">
+                <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <h5 class="card-title fw-bold">Llanura de la Calma</h5>
+                    <p class="card-text small">Lugar histórico de batalla.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ==========================================
+     ZONA DE MODALES (VENTANAS EMERGENTES) 
+     ========================================== -->
+
+<!-- Modal Tidus -->
+<div class="modal fade" id="modalTidus" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content rounded-4 border-0 shadow">
+            <div class="modal-header border-0 pb-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4 text-center">
+                <!-- Imagen dentro del modal -->
+                <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Personajes/Tidus.webp" class="rounded-circle shadow mb-3" alt="Tidus" style="width: 150px; height: 150px; object-fit: cover;">
+                <h3 class="fw-bold text-ffx-blue">Tidus</h3>
+                <h6 class="text-uppercase text-muted mb-4">Estrella de los Zanarkand Abes</h6>
+                <p class="text-secondary text-start px-md-4">
+                    Un joven alegre y enérgico que es transportado al mundo de Spira después de que su ciudad natal, Zanarkand, sea destruida por la entidad conocida como Sinh. A lo largo del viaje, madura al enfrentarse a la cruda realidad del mundo y a los fantasmas de su pasado, especialmente su relación con su padre, Jecht.
+                </p>
+                <button type="button" class="btn btn-outline-secondary rounded-pill mt-3 px-4" data-bs-dismiss="modal">Cerrar Archivo</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Yuna -->
+<div class="modal fade" id="modalYuna" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content rounded-4 border-0 shadow">
+            <div class="modal-header border-0 pb-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4 text-center">
+                <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Personajes/Yuna2.webp" class="rounded-circle shadow mb-3" alt="Yuna" style="width: 150px; height: 150px; object-fit: cover;">
+                <h3 class="fw-bold text-ffx-blue">Yuna</h3>
+                <h6 class="text-uppercase text-muted mb-4">Gran Invocadora de Besaid</h6>
+                <p class="text-secondary text-start px-md-4">
+                    Hija del Alto Invocador Braska. Yuna es una joven dispuesta a sacrificar su propia vida para traer la "Calma" a Spira derrotando a Sinh. A pesar de su pesada carga, mantiene una actitud amable y decidida, convirtiéndose en el símbolo de esperanza para todo su pueblo.
+                </p>
+                <button type="button" class="btn btn-outline-secondary rounded-pill mt-3 px-4" data-bs-dismiss="modal">Cerrar Archivo</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Auron -->
+<div class="modal fade" id="modalAuron" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content rounded-4 border-0 shadow">
+            <div class="modal-header border-0 pb-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4 text-center">
+                <!-- Imagen dentro del modal -->
+                <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Personajes/Auron.webp" class="rounded-circle shadow mb-3" alt="Auron" style="width: 150px; height: 150px; object-fit: cover;">
+                <h3 class="fw-bold text-ffx-blue">Auron</h3>
+                <h6 class="text-uppercase text-muted mb-4">El Mejor Guardián de Todos</h6>
+                <p class="text-secondary text-start px-md-4">
+                    Legendario y estoico guardián, conocido por su lealtad, sabiduría y carácter serio. Como "no enviado", guía a Yuna y Tidus, utilizando una gran katana y técnicas de samurái (Bushido) para protegerlos, ocultando secretos sobre el pasado de Sinh y cumpliendo una última promesa. 
+                </p>
+                <button type="button" class="btn btn-outline-secondary rounded-pill mt-3 px-4" data-bs-dismiss="modal">Cerrar Archivo</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Wakka -->
+<div class="modal fade" id="modalWakka" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content rounded-4 border-0 shadow">
+            <div class="modal-header border-0 pb-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4 text-center">
+                <!-- Imagen dentro del modal -->
+                <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Personajes/Wakka2.webp" class="rounded-circle shadow mb-3" alt="Wakka" style="width: 150px; height: 150px; object-fit: cover;">
+                <h3 class="fw-bold text-ffx-blue">Wakka</h3>
+                <h6 class="text-uppercase text-muted mb-4">Capitán de los Besaid Aurochs</h6>
+                <p class="text-secondary text-start px-md-4">
+                    Capitán del equipo de blitzbol Besaid Aurochs y guardián de Yuna. Es un joven alegre y protector, aunque inicialmente ingenuo y fundamentalista religioso (seguidor de Yevon). Sufre una gran evolución al desmoronarse sus ideales religiosos y superar prejuicios, madurando significativamente.
+                </p>
+                <button type="button" class="btn btn-outline-secondary rounded-pill mt-3 px-4" data-bs-dismiss="modal">Cerrar Archivo</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Lulu -->
+<div class="modal fade" id="modalLulu" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content rounded-4 border-0 shadow">
+            <div class="modal-header border-0 pb-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4 text-center">
+                <!-- Imagen dentro del modal -->
+                <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Personajes/Lulu.webp" class="rounded-circle shadow mb-3" alt="Lulu" style="width: 150px; height: 150px; object-fit: cover;">
+                <h3 class="fw-bold text-ffx-blue">Lulu</h3>
+                <h6 class="text-uppercase text-muted mb-4">Maga Negra y Guardiana</h6>
+                <p class="text-secondary text-start px-md-4">
+                    Maga negra estoica, que sirve como una de las guardianas de Yuna. Su papel es fundamental como protectora experimentada, figura materna/hermana mayor para Yuna y mentora que explica el mundo de Spira a Tidus.
+                </p>
+                <button type="button" class="btn btn-outline-secondary rounded-pill mt-3 px-4" data-bs-dismiss="modal">Cerrar Archivo</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Khimari -->
+<div class="modal fade" id="modalKhimari" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content rounded-4 border-0 shadow">
+            <div class="modal-header border-0 pb-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4 text-center">
+                <!-- Imagen dentro del modal -->
+                <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Personajes/khimari.webp" class="rounded-circle shadow mb-3" alt="Khimari" style="width: 150px; height: 150px; object-fit: cover;">
+                <h3 class="fw-bold text-ffx-blue">Khimari Ronso</h3>
+                <h6 class="text-uppercase text-muted mb-4">El Último de los Ronso</h6>
+                <p class="text-secondary text-start px-md-4">
+                    Guardián silencioso y leal de Yuna, fundamental para su protección desde la infancia y en su viaje como invocadora. Marginado de su tribu, encuentra propósito al cumplir la última voluntad de Auron, protegiendo a Yuna en Besaid y luego uniéndose a ella para derrotar a Sinh. 
+                </p>
+                <button type="button" class="btn btn-outline-secondary rounded-pill mt-3 px-4" data-bs-dismiss="modal">Cerrar Archivo</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Rikku -->
+<div class="modal fade" id="modalRikku" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content rounded-4 border-0 shadow">
+            <div class="modal-header border-0 pb-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4 text-center">
+                <!-- Imagen dentro del modal -->
+                <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Personajes/Rikku.webp" class="rounded-circle shadow mb-3" alt="Rikku" style="width: 150px; height: 150px; object-fit: cover;">
+                <h3 class="fw-bold text-ffx-blue">Rikku</h3>
+                <h6 class="text-uppercase text-muted mb-4">La Chica Albhed</h6>
+                <p class="text-secondary text-start px-md-4">
+                    La primera amiga de Tidus en Spira, una Albhed experta en maquinaria y la última guardiana de Yuna. Su papel es crucial para humanizar a los Albhed ante el grupo, proteger a su prima Yuna y cuestionar la fatalidad del peregrinaje. 
+                </p>
+                <button type="button" class="btn btn-outline-secondary rounded-pill mt-3 px-4" data-bs-dismiss="modal">Cerrar Archivo</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

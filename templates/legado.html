@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block title %}Legado | Historia de FFX{% endblock %}
+
+{% block content %}
+
+<!-- ENCABEZADO DE LA PÁGINA -->
+<header class="bg-ffx-dark text-white text-center py-5 shadow-sm">
+    <div class="container mt-4">
+        <h1 class="display-4 fw-bold text-uppercase" style="letter-spacing: 2px;">El Legado</h1>
+        <p class="lead text-white-50">Descubre cómo una fantasía final redefinió la industria para siempre.</p>
+    </div>
+</header>
+
+<div class="container my-5">
+
+    <!-- SECCIÓN 1: EL DESARROLLO (Imagen Izquierda, Texto Derecha) -->
+    <div class="row align-items-center mb-5 pb-5 border-bottom">
+        <div class="col-md-6 mb-4 mb-md-0">
+            <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Legado/generacion.webp" class="img-fluid rounded-4 shadow-lg" alt="Desarrollo de FFX">
+        </div>
+        <div class="col-md-6 px-md-5">
+            <small class="text-uppercase fw-bold text-ffx-blue mb-2 d-block">Innovación Tecnológica</small>
+            <h2 class="fw-bold mb-3">El Salto a la Nueva Generación</h2>
+            <p class="text-secondary lead">Final Fantasy X no solo fue el primer juego de la franquicia para PlayStation 2, sino que marcó un antes y un después en la narrativa de los videojuegos.</p>
+            <p class="text-secondary">Fue el primer título de la saga en incorporar actuación de voz completa, abandonando los cuadros de texto mudos para dar a los personajes una profundidad emocional sin precedentes. Sus entornos 3D renderizados y las expresiones faciales capturadas establecieron el estándar oro de la época.</p>
+        </div>
+    </div>
+    
+
+    <!-- SECCIÓN 2: LA SECUELA (Texto Izquierda, Imagen Derecha) -->
+    <div class="row align-items-center mb-5 pb-5 border-bottom">
+        <div class="col-md-6 px-md-5 order-2 order-md-1">
+            <small class="text-uppercase fw-bold text-ffx-blue mb-2 d-block">Esperada Secuela</small>
+            <h2 class="fw-bold mb-3">Final Fantasy X-2: La Calma Eterna</h2>
+            <p class="text-secondary lead">Llegó tres años después de Final Fantasy X, con la promesa de continuar la historia en el mundo de Spira, con Yuna como protagonista.</p>
+            <p class="text-secondary">Vendió cerca de 2 millones de copias en Japón en 2003, siendo el más vendido del año allí, y sumó millones más a nivel mundial. Aunque su tono alegre y estilo pop contrastaron con el X y generaron opiniones divididas, la crítica elogió su sistema de combate rápido.</p>
+        </div>
+        <div class="col-md-6 mb-4 mb-md-0 order-1 order-md-2">
+            <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Legado/secuela1.webp" class="img-fluid rounded-4 shadow-lg" alt="Música">
+        </div>
+    </div>
+    
+    
+        <!-- SECCIÓN 3: LA MÚSICA (Imagen Izquierda, Texto Derecha) -->
+    <div class="row align-items-center mb-5 pb-5 border-bottom">
+        <div class="col-md-6 mb-4 mb-md-0">
+            <img src="https://xlnqfhbsdizormbrsvrk.supabase.co/storage/v1/object/public/ffx-assets/Legado/nobuo_uematsu.webp" class="img-fluid rounded-4 shadow-lg" alt="Desarrollo de FFX">
+        </div>
+        <div class="col-md-6 px-md-5">
+            <small class="text-uppercase fw-bold text-ffx-blue mb-2 d-block">Banda Sonora Legendaria</small>
+            <h2 class="fw-bold mb-3">Las Notas de Nobuo Uematsu</h2>
+            <p class="text-secondary lead">La música de Spira es tan protagonista como sus personajes.</p>
+            <p class="text-secondary">Con piezas maestras como <em>"To Zanarkand"</em> y <em>"Suteki Da Ne"</em>, Uematsu (junto a Masashi Hamauzu y Junya Nakano) logró transmitir la melancolía, la esperanza y la épica de un mundo atrapado en una espiral de muerte. Hoy en día, estos temas siguen siendo interpretados por orquestas sinfónicas en todo el mundo.</p>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
