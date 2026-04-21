@@ -3,13 +3,6 @@
 ![Status](https://img.shields.io/badge/Status-Publicado-success)
 ![Tech](https://img.shields.io/badge/Stack-Flask%20%7C%20Bootstrap%205%20%7C%20Supabase-blue)
 
-### 📸 Vista Previa
-**Versión de Escritorio**
-![Desktop Preview](screenshots/1.png)
-
-**Versión Móvil**
-![Mobile Preview](screenshots/2.jpg)
-
 ### *Donde la fantasía se encuentra con la excelencia corporativa.*
 
 **Spira Corp** es un proyecto de portafolio que redefine el concepto de "Plantilla Corporativa Premium". Utilizando el universo de *Final Fantasy X* como hilo conductor, este desarrollo demuestra cómo una temática creativa puede transformarse en una solución empresarial elegante, funcional y de alto impacto visual.
@@ -58,3 +51,23 @@ La web incluye una arquitectura de estilos que permite cambiar la identidad visu
 1. Clona el repositorio:
    ```bash
    git clone [https://github.com/Reimel-Maestre/FFX-web-project.git](https://github.com/Reimel-Maestre/FFX-web-project.git)
+2. Instala las dependencias:
+   ```bash
+   pip install -r requirements.txt
+3. Ejecuta la aplicación:
+   ```bash
+   python app.py
+4. Abre http://127.0.0.1:5000 en tu navegador.
+
+### 📸 Vista Previa
+**Versión de Escritorio**
+![Desktop Preview](screenshots/1.png)
+
+**Versión Móvil**
+![Mobile Preview](screenshots/2.jpg)
+
+✍️ Nota del Desarrollador
+Este proyecto representa un hito personal de resolución de problemas y persistencia. Fue desarrollado íntegramente en un entorno móvil (Android) utilizando herramientas como Termux y Acode, demostrando que la calidad técnica no depende del hardware, sino de la voluntad de aprender y crear.
+¿Te interesa trabajar conmigo?
+¡Estoy abierto a nuevos proyectos y desafíos técnicos!
+📫 reimeljhosuemaestre@gmail.com
