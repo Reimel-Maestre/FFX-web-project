@@ -20,6 +20,5 @@ def legado():
 def biblioteca():
     return render_template('biblioteca.html')
 
-# --- INICIO DEL SERVIDOR ---
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=False) 
